@@ -6,40 +6,321 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
   <link rel="shortcut icon" href="./icons/youtube-icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./yt-styles.css">
 </head>
 <body class="bg-black-dark">
+    <!-- ---HEADER--- -->
+    <header class="header">
+      <!-- logo -->
+      <section class="header-section one">
+        <img class="pointer menu-burger" src="./icons/burger menu.svg" alt="menu">
+        <img class="pointer youtube-icon" src="./icons/youtube.svg" alt="youtube">
+      </section>
+      <!-- search -->
+      <section class="header-section two">
+        <input class="search-yt" type="search" placeholder="Buscar">
+        <button class="pointer button-search">
+          <img src="./icons/search.svg" alt="search">
+        </button>
+        <p class="pointer microphone"><img src="./icons/microphone.svg" alt="microphone"></p>
+      </section>
+      <!-- options -->
+      <section class="pointer header-section three">
+        <img src="./icons/new video.svg" alt="upload">
+        <img src="./icons/apps.svg" alt="yt">
+        <img src="./icons/bell.svg" alt="bell">
+        <img class="profile-yt" src="./Images/profile.jpg" alt="yt">
+      </section>
+    </header>
 
-  <!-- HEADER -->
-  <header class="header">
-    <section class="h-sect-1">
-      <img class="menu-burger" src="./icons/burger menu.svg" alt="menu">
-      <img class="youtube-icon" src="./icons/youtube.svg" alt="youtube">
-    </section>
-    <section class="h-sect-2">
-      <input class="search-yt" type="search" name="" id="" placeholder="Buscar">
-      <button class="button-search">
-        <img src="./icons/search.svg" alt="search">
-      </button>
-      <p class="microphone"><img src="./icons/microphone.svg" alt="microphone"></p>
-    </section>
-    <section class="h-sect-3">
-      <img src="./icons/new video.svg" alt="upload">
-      <img src="./icons/apps.svg" alt="yt">
-      <img src="./icons/bell.svg" alt="bell">
-      <img class="profile-yt" src="./Images/profile.jpg" alt="yt">
-    </section>
-  </header>
-
-  <!-- MAIN -->
-  <main class="main-yt">
+    <!-- ---MENU LEFT--- -->
     <section class="menu-left">
-      <p>hola mundo</p>
+      <!-- section 1 -->
+      <article class="menu-left-section">
+        <div><img src="./icons/Home.svg" alt=""> <p>Principal</p></div>
+        <div><img src="./icons/explore.svg" alt=""> <p>Explorar</p></div>
+        <div><img src="./icons/subs.svg" alt=""> <p>Suscripciones</p></div>
+      </article>
+      <div class="separator bg-black-light"></div>
+      <!-- section 2 -->
+      <article class="menu-left-section">
+        <div><img src="./icons/library.svg" alt=""> <p>Biblioteca</p></div>
+        <div><img src="./icons/history.svg" alt=""> <p>Historial</p></div>
+        <div><img src="./icons/your-videos.svg" alt=""> <p>Tus videos</p></div>
+        <div><img src="./icons/clock.svg" alt=""> <p>Ver más tarde</p></div>
+        <div><img src="./icons/like.svg" alt=""> <p>Videos que me gustan</p></div>
+      </article>
+      <div class="separator bg-black-light"></div>
+      <!-- section 3 -->
+      <article class="menu-left-section">
+        <p class="title-4 color-gray-dark">SUSCRIPCIONES</p>
+        <div><img src="./icons/explorer canals.svg" alt=""> <p>Explorar canales</p></div>
+      </article>
+      <div class="separator bg-black-light"></div>
+      <!-- section 4 -->
+      <article class="menu-left-section">
+        <p class="title-4 color-gray-dark">MÁS DE YOUTUBE</p>
+        <div><img src="./icons/YT-premium.svg" alt=""> <p>YouTube Premium</p></div>
+        <div><img src="./icons/movies.svg" alt=""> <p>Peliculas</p></div>
+        <div><img src="./icons/videogames.svg" alt=""> <p>Videojuegos</p></div>
+        <div><img src="./icons/stream.svg" alt=""> <p>En vivo</p></div>
+        <div><img src="./icons/learn.svg" alt=""> <p>Aprendizaje</p></div>
+        <div><img src="./icons/sports.svg" alt=""> <p>Deportes</p></div>
+        <div><img src="./icons/" alt=""> <p></p></div>
+      </article>
+      <div class="separator bg-black-light"></div>
+      <!-- section 5 -->
+      <article class="menu-left-section">
+        <div><img src="./icons/settings.svg" alt=""> <p>Configuración</p></div>
+        <div><img src="./icons/history-of-reports.svg" alt=""> <p>Historial de denuncias</p></div>
+        <div><img src="./icons/help.svg" alt=""> <p>Ayuda</p></div>
+        <div><img src="./icons/send-comments.svg" alt=""> <p>Enviar commentarios</p></div>
+      </article>
+      <div class="separator bg-black-light"></div>
+      <!-- section 6 -->
+      <p class="menu-left-info">
+        <span class="pointer">Acerca de</span>
+        <span class="pointer">Prensa</span>
+        <span class="pointer">Derechos de autor</span>
+        <span class="pointer">Comunicarte con nosotros</span>
+        <span class="pointer">Creadores</span>
+        <span class="pointer">Anunciar</span>
+        <span class="pointer">Desarrolladorres</span>
+      </p>
+      <p class="menu-left-info next">
+        <span class="pointer">Condiciones</span>
+        <span class="pointer">Privacidad</span>
+        <span class="pointer">Políticas y seguridad</span>
+        <span class="pointer">Cómo funciona YouTube</span>
+        <span class="pointer">Prueba funciones nuevas</span>
+      </p>
+      <p class="menu-left-info next color-gray-dark">&copy; 2022 Google LLC</p>
     </section>
 
-    <section class="main-videos">
-      <section></section>
-    </section>
-  </main>
+    <!-- ---TOP VIDEOS--- -->
+    <main class="container-top-videos">
+      <div class="top-videos">
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-home-page">
+          <img src="./Images/Kiss×sis.png">
+          <div>
+            <img src="./Images/profile.jpg">
+            <div>
+              <h4>Faisy saco a mariana de su zona de confort haciendo videos de mierdas</h4>
+              <p class="small not-margin color-gray-dark">Canal 5</p>
+              <p class="small not-margin color-gray-dark">1.8 M de vistas • hace 1 año</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
 </body>
 </html>
